@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Keywords.AlwaysRun">
+        <methods>
+          <include name="WebStudentLogin"/>
+        </methods>
+      </class> <!-- Keywords.AlwaysRun -->
+      <class name="Keywords.TimeOut">
+        <methods>
+          <include name="LogOutPage"/>
+        </methods>
+      </class> <!-- Keywords.TimeOut -->
+      <class name="Keywords.TimeOut2">
+        <methods>
+          <include name="LandingPage"/>
+          <include name="LoanContact"/>
+        </methods>
+      </class> <!-- Keywords.TimeOut2 -->
+      <class name="Keywords.DependsOnMethod">
+        <methods>
+          <include name="APIStudentLogin"/>
+          <include name="WebStudentLogin"/>
+        </methods>
+      </class> <!-- Keywords.DependsOnMethod -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
